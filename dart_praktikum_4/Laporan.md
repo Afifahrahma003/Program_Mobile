@@ -7,7 +7,7 @@
 ### Kelas = SIB 3D
 
 
-### PRATIKUM 1 Eksperimen Tipe Data List
+## PRATIKUM 1 Eksperimen Tipe Data List
 #### 1. Ketik atau salin kode program berikut ke dalam void main(). Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
         var list = [1, 2, 3];
         assert(list.length == 3);
@@ -107,7 +107,7 @@ Tidak akan terjadi error program akan menampilkan {} atau setkosong sebanyak 3 i
             print(gifts);
             print(nobleGases);
 #### Hasil Running :
-
+<img src ="G3.PNG">
 
 
 #### Penjelasan : 
@@ -123,14 +123,20 @@ Program diatas setelah dijalankan akan menampikan format yang dicetak dalam gift
             nobleGases[2] = 'helium';
             nobleGases[10] = 'neon';
             nobleGases[18] = 'argon';
+
 #### Hasil Running :
+<img src ="G3.1.PNG">
 
 
 #### Penjelasan : 
 akan terjadi error saat program dart dijalankan. karena variabel gifts dan nobleGases tidak dideklarasikan dan penggunaan variabel tidak konsisten (mhs1 dan mhs2)
 Hasil Modifikasi : 
 
-#### PRATIKUM 4 Eksperimen Tipe Data List: Spread dan Control-flow Operators
+#### Hasil Modifikasi :
+<img src ="g3.2.PNG">
+
+
+## PRATIKUM 4 Eksperimen Tipe Data List: Spread dan Control-flow Operators
 
 #### 1.Ketik atau salin kode program berikut ke dalam fungsi main(). Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
             var list = [1, 2, 3];
@@ -139,6 +145,7 @@ Hasil Modifikasi :
             print(list2);
             print(list2.length);
 ##### Hasil Running :
+<img src ="g4.PNG">
 
 
 
@@ -146,6 +153,7 @@ Hasil Modifikasi :
 Akan terjadi error saat program dart dijalankan, karena list1 tidak dideklarasikan. list1 diganti dengan list jika ingin mencetak nilai dari list
 
 #### Hasil Perbaikan :
+<img src ="g4.2.PNG">
 
 
 
@@ -156,29 +164,34 @@ Akan terjadi error saat program dart dijalankan, karena list1 tidak dideklarasik
             var list3 = [0, ...?list1];
             print(list3.length); 
 #### Hasil Running :
+<img src ="G4.1.PNG">
 
 
 #### Penjelasan : 
 list1 dicetak seperti yang dideklarasikan, yaitu [1, 2, null]. list3 menambahkan elemen 0 dan semua elemen dari list1, termasuk nilai null, sehingga panjangnya adalah 4.
 
 #### Hasil Modifikasi : 
+<img src ="g4.3.PNG">
 
 #### Penjelasan : 
-list1 berisi [1, 2, null]. list3 berisi [0, 1, 2, null, 2241760069] yang merupakan gabungan dari elemen awal, list1, dan nimList. Panjang list3 adalah 5, karena ada lima elemen dalam list tersebut.
+list1 berisi [1, 2, null]. list3 berisi [0, 1, 2, null, 2241760088] yang merupakan gabungan dari elemen awal, list1, dan nimList. Panjang list3 adalah 5, karena ada lima elemen dalam list tersebut.
 
 
 #### 3. Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda. Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel promoActive ketika true dan false.
             var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
             print(nav);
 #### Hasil Running :
+<img src ="g4.4.PNG">
 
 
 #### Penjelasan :
 Akan terjadi error karena variabel promoActive tidak memiliki nilai
 
 #### Hasil Modifikasi Yang bernilai True : 
+<img src ="g4.6.PNG">
 
 #### Hasil Modifikasi Yang bernilai False : 
+<img src ="g4.5.PNG">
 
 #### Penjelasan : 
 Jika promoActive adalah true, elemen 'Outlet' ditambahkan; jika false, elemen tersebut tidak ditambahkan. Kode ini bekerja tanpa masalah dan menghasilkan output yang sesuai berdasarkan nilai dari promoActive.
@@ -188,6 +201,7 @@ Jika promoActive adalah true, elemen 'Outlet' ditambahkan; jika false, elemen te
             var nav2 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
             print(nav2);
 #### Hasil Running :
+<img src ="g4.7.PNG">
 
 
 #### Penjelasan :
@@ -195,8 +209,10 @@ Sintaks if (login case 'Manager') tidak valid di Dart. Sintaks ini salah karena 
 
 
 #### Hasil Modifikasi login Manager : 
+<img src ="g4.7.PNG">
 
 #### Hasil Modifikasi Yang bernilai False : 
+<img src ="g4.8.PNG">
 
 #### Penjelasan : 
 Perbandingan yang benar digunakan untuk mengecek nilai dari login dan menambahkan 'Inventory' ke dalam list jika kondisi terpenuhi. List nav2 akan mencerminkan elemen 'Inventory' hanya jika login sama dengan 'Manager'. Jika tidak, list nav2 hanya berisi elemen lainnya.
@@ -208,23 +224,28 @@ Perbandingan yang benar digunakan untuk mengecek nilai dari login dan menambahka
             assert(listOfStrings[1] == '#1');
             print(listOfStrings);
 #### Hasil Running :
+<img src ="g4.9.PNG">
 
 
 #### Penjelasan :
 listOfStrings dimulai dengan '#0'. Kemudian menggunakan ekspresi for (var i in listOfInts) '#$i' untuk menghasilkan '#1', '#2', dan '#3' dari elemen-elemen dalam listOfInts. Hasil akhir listOfStrings adalah ['#0', '#1', '#2', '#3']. Assert memeriksa bahwa elemen kedua adalah '#1', yang benar, jadi tidak ada error pada assert.
 
 Manfaat Collection For:
--> membuat list baru secara dinamis berdasarkan elemen dari list lain atau iterable
--> interpolasi string langsung di dalam list, sehingga memudahkan pembuatan string yang terformat. -> membuat kode lebih ringkas dan mudah dibaca dibandingkan dengan loop eksplisit atau metode lain. -> Dapat digunakan dengan ekspresi kondisi tambahan untuk menyaring atau memodifikasi elemen saat membuat list baru.
+- membuat list baru secara dinamis berdasarkan elemen dari list lain atau iterable
+- interpolasi string langsung di dalam list, sehingga memudahkan pembuatan string yang terformat. 
+- membuat kode lebih ringkas dan mudah dibaca dibandingkan dengan loop eksplisit atau metode lain. 
+- Dapat digunakan dengan ekspresi kondisi tambahan untuk menyaring atau memodifikasi elemen saat membuat list baru.
 
-### PRATIKUM 5 Eksperimen Tipe Data Records
+
+
+## PRATIKUM 5 Eksperimen Tipe Data Records
 
 #### 1.Ketik atau salin kode program berikut ke dalam fungsi main(). Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
             var record = ('first', a: 2, b: true, 'last');
             print(record)  
 
 #### Hasil Running :
-
+<img src ="g5.PNG">
 
 
 #### Penjelasan : 
@@ -237,13 +258,11 @@ Kode ini membuat sebuah record yang menggunakan sintaks tuple-like dengan penama
             return (b, a);
             }
 
-#### Hasil Running :
-
-
 #### Penjelasan : 
 Program akan error saat dijalankan karena tidak ada fungsi main didalam program. Fungsi main adalah titik awal dari eksekusi program Dart. Tanpa fungsi main, Dart tidak tahu dari mana harus memulai eksekusi.
 
 #### Hasil Modifikasi : 
+<img src ="g5.1.PNG">
 
 #### Penjelasan : 
 diperbaiki menggunakan List untuk meniru fungsionalitas tuple. Fungsi tukar yang mendukung List berfungsi dengan baik untuk menukar nilai dan dapat digunakan di dalam main() untuk memverifikasi hasil pertukaran nilai di dalam records.
@@ -255,11 +274,14 @@ diperbaiki menggunakan List untuk meniru fungsionalitas tuple. Fungsi tukar yang
             print(mahasiswa);
 
 #### Hasil Running :
-
+<img src ="g5.2.PNG">
 
 #### Penjelasan : 
 Akan terjadi error karena Dart tidak mengenali tipe tuple dalam konteks deklarasi variabel seperti (String, int) secara langsung.
+
 #### Hasil Modifikasi Yang bernilai True : 
+<img src ="g5.3.PNG">
+
 
 #### Penjelasan :
 mendeklarasikan dan menginisialisasi sebuah List bernama mahasiswa yang menyimpan data berupa nama dan NIM. Data ini kemudian dicetak secara keseluruhan serta dipisahkan untuk nama dan NIM.
@@ -275,16 +297,19 @@ mendeklarasikan dan menginisialisasi sebuah List bernama mahasiswa yang menyimpa
             print(mahasiswa2.$2); // Prints 'last'
 
 #### Hasil Running :
-
+<img src ="g5.4.PNG">
 
 #### Penjelasan :
-Program di atas akan menampilakan nilai nilai yang didefinisikan secara beruntun dengan nama parameter
-Hasil Modifikasi login Manager : 
+    Program di atas akan menampilakan nilai nilai yang didefinisikan secara beruntun dengan nama parameter
+
+#### Hasil Modifikasi login Manager : 
+<img src ="g5.5.PNG">
 
 #### Penjelasan : 
-setelah modofikasi program data dalam program berupa nama 'Afifah Rahma', NIM 2241760088, nilai true, dan 'last'.
+    setelah modofikasi program data dalam program berupa nama 'Afifah Rahma', NIM 2241760088, nilai true, dan 'last'.
 
-### TUGAS PRATIKUM
+
+## TUGAS PRATIKUM
 
 #### 1. Silakan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
 
@@ -321,7 +346,7 @@ Dalam Dart, fungsi dianggap sebagai first-class objects. Ini berarti fungsi dapa
           };
           
           // Menggunakan fungsi
-          greet('Anas'); // Prints: Hello, Anas!
+          greet('Afifah'); // Prints: Hello, Afifah!
           
           // Mengirim fungsi sebagai argumen
           void execute(Function action) {
