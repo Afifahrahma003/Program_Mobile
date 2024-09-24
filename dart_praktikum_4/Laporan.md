@@ -33,13 +33,14 @@
 #### Penjelasan : 
 dari hasil modifikasi program diatas, maka program akan membuat list dengan panjang 5 dan nilai awal null, kemudian mengisi kedua elemen pada indeks ke 1 dan ke 2 dengan nama Afifah Rahma dan NIM 2241760088. Elemen lain (indeks 0,3 dan 4) tetap bernilai NUll. Nama dan nim dicetak, dan seluruh list ditampilkan.
 
-### PRATIKUM 2 Eksperimen Tipe Data Set
+
+## PRATIKUM 2 Eksperimen Tipe Data Set
 
 ### 1. Ketik atau salin kode program berikut ke dalam fungsi main(). Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
         var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
         print(halogens);
 ### Hasil Running :
-
+<img src ="G2.PNG">
 
 #### Penjelasan : 
 Dari program di atas tidak terjadi error dan akan menampilkan semua elemen yang ada dalam set.
@@ -54,20 +55,39 @@ Dari program di atas tidak terjadi error dan akan menampilkan semua elemen yang 
             print(names2);
             print(names3);
 #### Hasil Running :
-
+<img src ="G2.1.PNG">
 
 #### Penjelasan : 
 Tidak akan terjadi error program akan menampilkan {} atau setkosong sebanyak 3 indeks.
-#### Hasil Modifikasi : 
-#### Hasil Modifikasi : 
+#### Modifikasi : 
+    void main() {
+    var names1 = <String>{};
+    Set<String> names2 = {}; // This works, too.
+
+    // Menambahkan elemen menggunakan .add()
+    names1.add("Afifah Rahma");
+    names1.add("2241760088");
+
+    // Menambahkan elemen menggunakan .addAll()
+    names2.addAll(["Afifah Rahma", "2241760088"]);
+
+    print("names1:");
+    print(names1); 
+
+    print("names2:");
+    print(names2); 
+    }
+#### Hasil Modifikasi : <img src ="G2.2.PNG">
 
 #### Penjelasan :
 
-names1: Mencetak {Afifah Rahma, 2241760088} karena kedua elemen ditambahkan ke dalam set names1 menggunakan metode .add().
+    names1: Mencetak {Afifah Rahma, 2241760088} karena kedua elemen ditambahkan ke dalam set names1 menggunakan metode .add().
 
-names2: Mencetak {Afifah Rahma, 2241760088} karena kedua elemen ditambahkan ke dalam set names2 menggunakan metode .addAll().
+    names2: Mencetak {Afifah Rahma, 2241760088} karena kedua elemen ditambahkan ke dalam set names2 menggunakan metode .addAll().
 
-### PRATIKUM 3 Eksperimen Tipe Data Maps
+
+
+## PRATIKUM 3 Eksperimen Tipe Data Maps
 
 
 #### 1.Ketik atau salin kode program berikut ke dalam fungsi main(). Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
