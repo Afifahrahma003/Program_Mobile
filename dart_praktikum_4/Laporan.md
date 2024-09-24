@@ -19,16 +19,16 @@
         assert(list[1] == 1);
         print(list[1]);
 #### Hasil Running :
-<img src ="G1.PNG">
+<img src ="G1.png">
 
 
 #### 2. Ubah kode pada langkah 1 menjadi variabel final yang mempunyai index = 5 dengan default value = null. Isilah nama dan NIM Anda pada elemen index ke-1 dan ke-2. Lalu print dan capture hasilnya. Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
 
 #### Modifikasi Program :
-<img src ="G1.3.PNG">
+<img src ="G1.3.png">
 
 #### Hasil Running :
-<img src ="G1.2.PNG">
+<img src ="G1.2.png">
 
 #### Penjelasan : 
 dari hasil modifikasi program diatas, maka program akan membuat list dengan panjang 5 dan nilai awal null, kemudian mengisi kedua elemen pada indeks ke 1 dan ke 2 dengan nama Afifah Rahma dan NIM 2241760088. Elemen lain (indeks 0,3 dan 4) tetap bernilai NUll. Nama dan nim dicetak, dan seluruh list ditampilkan.
@@ -40,7 +40,7 @@ dari hasil modifikasi program diatas, maka program akan membuat list dengan panj
         var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
         print(halogens);
 ### Hasil Running :
-<img src ="G2.PNG">
+<img src ="G2.png">
 
 #### Penjelasan : 
 Dari program di atas tidak terjadi error dan akan menampilkan semua elemen yang ada dalam set.
@@ -55,7 +55,7 @@ Dari program di atas tidak terjadi error dan akan menampilkan semua elemen yang 
             print(names2);
             print(names3);
 #### Hasil Running :
-<img src ="G2.1.PNG">
+<img src ="G2.1.png">
 
 #### Penjelasan : 
 Tidak akan terjadi error program akan menampilkan {} atau setkosong sebanyak 3 indeks.
@@ -77,7 +77,7 @@ Tidak akan terjadi error program akan menampilkan {} atau setkosong sebanyak 3 i
     print("names2:");
     print(names2); 
     }
-#### Hasil Modifikasi : <img src ="G2.2.PNG">
+#### Hasil Modifikasi : <img src ="G2.2.png">
 
 #### Penjelasan :
 
@@ -107,7 +107,7 @@ Tidak akan terjadi error program akan menampilkan {} atau setkosong sebanyak 3 i
             print(gifts);
             print(nobleGases);
 #### Hasil Running :
-<img src ="G3.PNG">
+<img src ="G3.png">
 
 
 #### Penjelasan : 
@@ -125,7 +125,7 @@ Program diatas setelah dijalankan akan menampikan format yang dicetak dalam gift
             nobleGases[18] = 'argon';
 
 #### Hasil Running :
-<img src ="G3.1.PNG">
+<img src ="G3.1.png">
 
 
 #### Penjelasan : 
@@ -133,7 +133,7 @@ akan terjadi error saat program dart dijalankan. karena variabel gifts dan noble
 Hasil Modifikasi : 
 
 #### Hasil Modifikasi :
-<img src ="g3.2.PNG">
+<img src ="g3.2.png">
 
 
 ## PRATIKUM 4 Eksperimen Tipe Data List: Spread dan Control-flow Operators
@@ -145,7 +145,7 @@ Hasil Modifikasi :
             print(list2);
             print(list2.length);
 ##### Hasil Running :
-<img src ="g4.PNG">
+<img src ="g4.png">
 
 
 
@@ -153,7 +153,7 @@ Hasil Modifikasi :
 Akan terjadi error saat program dart dijalankan, karena list1 tidak dideklarasikan. list1 diganti dengan list jika ingin mencetak nilai dari list
 
 #### Hasil Perbaikan :
-<img src ="g4.2.PNG">
+<img src ="g4.2.png">
 
 
 
@@ -164,14 +164,14 @@ Akan terjadi error saat program dart dijalankan, karena list1 tidak dideklarasik
             var list3 = [0, ...?list1];
             print(list3.length); 
 #### Hasil Running :
-<img src ="G4.1.PNG">
+<img src ="G4.1.png">
 
 
 #### Penjelasan : 
 list1 dicetak seperti yang dideklarasikan, yaitu [1, 2, null]. list3 menambahkan elemen 0 dan semua elemen dari list1, termasuk nilai null, sehingga panjangnya adalah 4.
 
 #### Hasil Modifikasi : 
-<img src ="g4.3.PNG">
+<img src ="g4.3.png">
 
 #### Penjelasan : 
 list1 berisi [1, 2, null]. list3 berisi [0, 1, 2, null, 2241760088] yang merupakan gabungan dari elemen awal, list1, dan nimList. Panjang list3 adalah 5, karena ada lima elemen dalam list tersebut.
@@ -181,17 +181,17 @@ list1 berisi [1, 2, null]. list3 berisi [0, 1, 2, null, 2241760088] yang merupak
             var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
             print(nav);
 #### Hasil Running :
-<img src ="g4.4.PNG">
+<img src ="g4.4.png">
 
 
 #### Penjelasan :
 Akan terjadi error karena variabel promoActive tidak memiliki nilai
 
 #### Hasil Modifikasi Yang bernilai True : 
-<img src ="g4.6.PNG">
+<img src ="g4.6.png">
 
 #### Hasil Modifikasi Yang bernilai False : 
-<img src ="g4.5.PNG">
+<img src ="g4.5.png">
 
 #### Penjelasan : 
 Jika promoActive adalah true, elemen 'Outlet' ditambahkan; jika false, elemen tersebut tidak ditambahkan. Kode ini bekerja tanpa masalah dan menghasilkan output yang sesuai berdasarkan nilai dari promoActive.
@@ -201,7 +201,7 @@ Jika promoActive adalah true, elemen 'Outlet' ditambahkan; jika false, elemen te
             var nav2 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
             print(nav2);
 #### Hasil Running :
-<img src ="g4.7.PNG">
+<img src ="g4.7.png">
 
 
 #### Penjelasan :
@@ -209,10 +209,10 @@ Sintaks if (login case 'Manager') tidak valid di Dart. Sintaks ini salah karena 
 
 
 #### Hasil Modifikasi login Manager : 
-<img src ="g4.7.PNG">
+<img src ="g4.7.png">
 
 #### Hasil Modifikasi Yang bernilai False : 
-<img src ="g4.8.PNG">
+<img src ="g4.8.png">
 
 #### Penjelasan : 
 Perbandingan yang benar digunakan untuk mengecek nilai dari login dan menambahkan 'Inventory' ke dalam list jika kondisi terpenuhi. List nav2 akan mencerminkan elemen 'Inventory' hanya jika login sama dengan 'Manager'. Jika tidak, list nav2 hanya berisi elemen lainnya.
@@ -224,7 +224,7 @@ Perbandingan yang benar digunakan untuk mengecek nilai dari login dan menambahka
             assert(listOfStrings[1] == '#1');
             print(listOfStrings);
 #### Hasil Running :
-<img src ="g4.9.PNG">
+<img src ="g4.9.png">
 
 
 #### Penjelasan :
@@ -245,7 +245,7 @@ Manfaat Collection For:
             print(record)  
 
 #### Hasil Running :
-<img src ="g5.PNG">
+<img src ="g5.png">
 
 
 #### Penjelasan : 
@@ -262,7 +262,7 @@ Kode ini membuat sebuah record yang menggunakan sintaks tuple-like dengan penama
 Program akan error saat dijalankan karena tidak ada fungsi main didalam program. Fungsi main adalah titik awal dari eksekusi program Dart. Tanpa fungsi main, Dart tidak tahu dari mana harus memulai eksekusi.
 
 #### Hasil Modifikasi : 
-<img src ="g5.1.PNG">
+<img src ="g5.1.png">
 
 #### Penjelasan : 
 diperbaiki menggunakan List untuk meniru fungsionalitas tuple. Fungsi tukar yang mendukung List berfungsi dengan baik untuk menukar nilai dan dapat digunakan di dalam main() untuk memverifikasi hasil pertukaran nilai di dalam records.
@@ -274,13 +274,13 @@ diperbaiki menggunakan List untuk meniru fungsionalitas tuple. Fungsi tukar yang
             print(mahasiswa);
 
 #### Hasil Running :
-<img src ="g5.2.PNG">
+<img src ="g5.2.png">
 
 #### Penjelasan : 
 Akan terjadi error karena Dart tidak mengenali tipe tuple dalam konteks deklarasi variabel seperti (String, int) secara langsung.
 
 #### Hasil Modifikasi Yang bernilai True : 
-<img src ="g5.3.PNG">
+<img src ="g5.3.png">
 
 
 #### Penjelasan :
@@ -297,13 +297,13 @@ mendeklarasikan dan menginisialisasi sebuah List bernama mahasiswa yang menyimpa
             print(mahasiswa2.$2); // Prints 'last'
 
 #### Hasil Running :
-<img src ="g5.4.PNG">
+<img src ="g5.4.png">
 
 #### Penjelasan :
     Program di atas akan menampilakan nilai nilai yang didefinisikan secara beruntun dengan nama parameter
 
 #### Hasil Modifikasi login Manager : 
-<img src ="g5.5.PNG">
+<img src ="g5.5.png">
 
 #### Penjelasan : 
     setelah modofikasi program data dalam program berupa nama 'Afifah Rahma', NIM 2241760088, nilai true, dan 'last'.
